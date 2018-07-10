@@ -1,0 +1,186 @@
+import habitaciones.*
+
+describe {
+
+
+//*********** OBJETOS PUNTO 1 *************
+
+//una persona de 37 años sin habilidades de cocina (para el ultimo punto del examen es Sencillo) 
+	var leo 
+
+//una persona de 29 anios con habilidades de cocina (para el ultimo punto del examen es Obsesiva)
+	var andrea 
+
+//una persona de 3 anios sin habilidades de cocina (para el ultimo punto del examen es Golosa)
+	var milena 
+
+//una habitacion de uso general
+	var comedor 
+
+//un banio	
+	var banioPrincipal 
+	
+//un dormitorio cuyos duenios son andrea y leo
+	var dormitorioMatrimonial
+
+//una cocina de 10 metros cuadrados
+	var cocinaPlantaBaja 	
+
+//***********OBJETOS TEST PUNTO 2****************/
+	
+	
+		//Un banio con un ocupante: milena 
+		var banioConMenor 
+		
+		//Un banio con un ocupante: andrea 
+		var banioConMayor 
+
+		//un dormitorio con dos ocupantes: ley y andrea. Los duenios son leo y andrea. 
+		var dormitorioMatrimonialOcupado 
+		
+		//un dormitorio con andrea como ocupante cuyos duenios leo y andrea
+		var dormitorioMatrimonialOcupadoConAndrea
+		
+		//un dormitorio con andrea como ocupante, cuya duenia es milena
+		var dormitorioMilenaOcupadoConAndrea  
+
+		//una cocina con andrea como ocupante, 10 de superficie
+		var cocinaOcupadaConAndrea 
+
+		//una cocina con leo como ocupante, 10 de superficie
+		var cocinaOcupadaConLeo  
+		
+//***********OBJETOS TEST PUNTO 3****************/
+
+
+	//una casa que tiene 4 habitaciones: banioPrincipal , dormitorioMatrimonial, cocinaPlantaBaja, comedor
+	var casaFlia
+
+	//Una familia cuyos miembros son leo, andrea y milena. La casa es: casaFlia.	
+	//Recordar que Leo es sencillo, Andrea obsesiva y Milena golosa
+	var familia		
+	
+	
+	
+
+//************TESTS PUNTO 1************
+
+//	test "confort uso general" {
+//		assert.equals(10, /* confort del comedor para leo*/)
+//		assert.equals(10, /* confort del comedor para milena*/ )
+//		assert.equals(10, /* confort del comedor para andrea*/ )
+//		
+//	}
+//	
+//	test "confort banio" {
+//		assert.equals(14, /* confort de banioPrincial para leo*/)		
+//		assert.equals(14, /* confort de banioPrincial para andrea*/)		
+//		assert.equals(12, /* confort de banioPrincial para milena*/)		
+//	}
+//
+//	test "confort dormitorio" {
+//		assert.equals(15, /* confort de dormitorioMatrimonial para leo*/)		
+//		assert.equals(15, /* confort de dormitorioMatrimonial para andrea*/)		
+//		assert.equals(10, /* confort de dormitorioMatrimonial para milena*/)		
+//	}
+//
+//	test "confort cocina" {
+//		assert.equals(10, /* confort de cocinaPlantaBaja para leo*/)		
+//		assert.equals(11, /* confort de cocinaPlantaBaja para andrea*/)		
+//		assert.equals(10, /* confort de cocinaPlantaBaja para milena*/)		
+//	
+//		
+//		//TODO! reconfigurar para que el porcentaje de la superficie
+//		//usado para puntos extras sea un 20%
+//		
+//		
+//		assert.equals(12, /* confort de cocinaPlantaBaja para andrea*/)		
+//
+//	}
+	
+	
+
+//************TESTS PUNTO 2.1************
+	
+//	test "puede entrar habitaciones vacias" {
+//		
+//		assert.that(/*si en comedor puede entrar leo */)
+//		assert.that(/*si en dormitorioMatrimonial puede entrar leo*/)
+//		assert.that(/*si en banioPrincipal puede entrar leo*/)
+//		assert.that(/*si en cocinaPlantaBaja puede entrar leo*/)
+//	}
+//	
+//	
+//		
+//	test "puede entrar banio ocupado" {
+//		assert.that(/* si en banioConMenor puede entrar leo*/) 
+//		assert.notThat(/* si en banioConMayor puede entrar leo */)	
+//	}
+//	
+//	test "puede entrar dormitorio" {
+//		
+//		assert.that(/* si en dormitorioMatrimonialOcupadoConAndrea puede entrar leo*/) //es duenio
+//		assert.notThat(/*si en dormitorioMatrimonialOcupadoConAndrea puede entrar milena*/) //faltan duenios
+//		assert.that(/* si en dormitorioMatrimonialOcupado puede entrar milena */) //estan los duenios
+//		
+//	}
+//
+//	test "puede entrar cocina con alguien que sabe cocinar" {
+//		assert.that( /* si en cocinaOcupadaConAndrea puede entrar leo */)
+//		
+//		//HACER QUE leo adquiera habilidades de cocina 
+//		
+//		assert.notThat(/* si en cocinaOcupadaConAndrea.puede entrar leo*/)	
+//	}
+//
+//	test "puede entrar cocina con alguien que no sabe cocinar" {
+//		assert.that(/* si en cocinaOcupadaConLeo puede entrar andrea*/)
+//		assert.that(/* si en cocinaOcupadaConLeo puede Entrar milena  */)
+//	}
+	
+	
+//Test punto 2.2 y 2.3
+
+//	test "andrea y milena entrando y saliendo de cuartos" {
+//			
+//		// HACER que milena entre a banioPrincipal
+//		assert.equals(banioPrincipal, /*habitacion donde esta milena */)
+//
+//		// HACER que andrea entre a dormitorioMatrimonial		
+//		assert.equals(dormitorioMatrimonial, /* habitacion donde esta andrea */)
+//		
+//		
+// 		//HACER que milena entre al dormitorio principal, cosa que no puede porque no es dueña
+//		
+//		assert.equals(banioPrincipal, /*habitacion donde esta milena */)
+//		
+//		
+//		// HACER que andrea entre a banioPrincipal		
+//		
+//		assert.equals(banioPrincipal, /* habitacion donde esta andrea */)
+//		
+// 		assert.notThat(/* si en dormitorioMatrimonial está andrea*/)		
+//		
+//	} 
+
+//************Test punto 3*************
+	
+//	test "habitaciones ocupadas, personas responsables, confort promedio y familia a gusto" {
+//		//HACER que leo entre a dormitorioMatrimonial
+//		//HACER que andrea entre a cocinaPlantaBaja 
+//		
+//		//punto 3.1
+//		assert.equals(#{dormitorioMatrimonial,cocinaPlantaBaja}, /* habitaciones ocupadas de casaFlia*/)		
+//		//punto 3.2
+//		assert.equals(#{leo,andrea}, /* responsables de casaFlia*/)	
+//		//punto 3.3
+//		assert.equals(47, /* confort promedio de familia*/)	
+//		//punto 3.4
+//		assert.that(/* si familia esta a gusto*/)
+//	}
+ 
+
+
+
+}
+
