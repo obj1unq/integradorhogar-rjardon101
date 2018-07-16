@@ -65,6 +65,7 @@ describe "test de habitaciones"{
 
 //************TESTS PUNTO 1************
 
+		//por que es un mensaje distinto para el comedor que para las otras habitaciones?
 	test "confort uso general" {
 		assert.equals(10, comedor.confort())
 		assert.equals(10, comedor.confort() )
@@ -73,6 +74,7 @@ describe "test de habitaciones"{
 	}
 	
 	test "confort banio" {
+		//TODO: tiene nombre de orden pero es un consulta
 		assert.equals(14, leo.usarHabitacion(banioPrincipal))	
 		assert.equals(14, andrea.usarHabitacion(banioPrincipal))	
 		assert.equals(12, milena.usarHabitacion(banioPrincipal))		
